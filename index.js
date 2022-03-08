@@ -1,6 +1,5 @@
 //I'm a JS Node noob, pls help//
-
-const express = require(express);
+const express = Noderequire(express);
 const app = express();
 const port = 3000;
 const twilio = require('twilio');
@@ -11,10 +10,9 @@ const client = require('twilio')(accountSid, authToken);
 app.get("/"), (req, res) => {
     var client = new twilio('authToken');
 
-    //I realized afterwards that you need to verify the keys which costs money, rip//
     client.messages.create({
-        to: +46,
-        from: +46,
+        to: +46737345086,
+        from: +46733003037,
         body: 'Hello from Emmie!',
     })
     
