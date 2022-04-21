@@ -1,4 +1,4 @@
-//I'm a JS Node noob, pls help//
+
 const express = Noderequire(express);
 const app = express();
 const port = 3000;
